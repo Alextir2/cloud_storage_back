@@ -1,6 +1,6 @@
 package alex.tir.cloud_storage_back.config;
 
-import alex.tir.cloud_storage_back.service.UserService;
+import alex.tir.cloud_storage_back.service.impl.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,8 +24,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
-    private final UserService userService;
-
+    private final UserDetailsServiceImpl userService;
     final String[] SWAGGER = {
             // -- Swagger UI v2
             "/v2/api-docs",

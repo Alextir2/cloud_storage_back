@@ -1,10 +1,8 @@
 package alex.tir.cloud_storage_back.controller;
 
 import alex.tir.cloud_storage_back.dto.*;
-import alex.tir.cloud_storage_back.entity.User;
 import alex.tir.cloud_storage_back.service.AuthenticationService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

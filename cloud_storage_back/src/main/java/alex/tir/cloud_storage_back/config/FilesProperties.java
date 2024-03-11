@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("application")
 @Getter
 @Setter
-public class ApplicationProperties {
+public class FilesProperties {
 
     String baseFolder;
     Long baseLimit;
